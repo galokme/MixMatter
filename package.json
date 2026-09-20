@@ -1,0 +1,7 @@
+{
+  "name": "mixmatter-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Workspace foundation for the MixMatter Research software layer.",
+  "packageManager": "pnpm@12.5.1"
+}
