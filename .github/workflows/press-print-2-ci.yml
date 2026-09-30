@@ -56,7 +56,7 @@ jobs:
           root = json.loads(Path("plugin.json").read_text())
           compat = json.loads(Path(".codex-plugin/plugin.json").read_text())
           assert root["name"] == "mixmatter"
-          assert root["version"] == "2.1.0"
+          assert root["version"] == "2.1.1"
           iface = root["extensions"]["com.openai"]["interface"]
           assert iface["displayName"] == "MixMatter"
           assert iface["websiteURL"].endswith("/mixmatter/")

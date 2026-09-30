@@ -1,7 +1,7 @@
 {
   "name": "mixmatter",
-  "version": "2.1.0",
-  "description": "MixMatter: AI art direction and source-aware visual reconstruction with editorial composition, selective halftone, tactile collage, revision continuity, and strict source-text control.",
+  "version": "2.1.1",
+  "description": "MixMatter 2.1.1: restored v1 source-aware editorial print reconstruction with bold recomposition, tactile collage, source-adaptive color, and strict source-text control.",
   "author": {
     "name": "Fan Jiale / Galok",
     "email": "galokview@outlook.com",
@@ -23,7 +23,7 @@
   "interface": {
     "displayName": "MixMatter",
     "shortDescription": "AI art direction for existing imagery",
-    "longDescription": "MixMatter reads a user-supplied image before reconstructing it, identifies what must survive, forms a source-specific art-direction thesis, and rebuilds the image through flattened editorial composition, source-derived cropping and scale shifts, selective photographic retention, visible halftone and duotone, graphic fields, controlled tactile collage, and modernist hierarchy. Clear requests execute directly; vague requests are handled with autonomous judgment unless real ambiguity requires clarification. Revisions preserve successful decisions rather than restarting from a random composition. MixMatter adds no new typography by default, never invents or translates source text, and permits only exact wording explicitly supplied by the user unless generated copy is explicitly authorized.",
+    "longDescription": "MixMatter reconstructs a user-supplied image rather than merely decorating it. Version 2.1.1 restores the original v1 visual baseline: bold disassembly and recomposition, aggressive crop and scale shifts, selective photography, visible halftone or duotone, flattened graphic fields, tactile torn-paper collage, source-adaptive color, and strict source-text protection. Unrelated images must not collapse into one recurring blue/coral/botanical decorative template.",
     "developerName": "Fan Jiale",
     "category": "Creativity",
     "capabilities": [
@@ -34,9 +34,9 @@
     "privacyPolicyURL": "https://www.galok.me/mixmatter/privacy/",
     "termsOfServiceURL": "https://www.galok.me/mixmatter/terms/",
     "defaultPrompt": [
-      "Process this image with MixMatter.",
-      "Reconstruct this image with MixMatter. Preserve what makes the source identifiable and do not add new text.",
-      "Make this more graphic and fragmented with MixMatter, but preserve the subject and add no typography."
+      "Process this image with MixMatter. Reconstruct the composition rather than applying a filter or decorative frame.",
+      "Make this image bold, flat, printed, and source-specific with MixMatter. Preserve semantic identity, not the original camera layout.",
+      "Rebuild this image with selective photography, halftone, graphic fields, and tactile collage. Do not add new text or reuse a fixed decorative template."
     ],
     "brandColor": "#126BFF",
     "composerIcon": "./assets/mixmatter-icon-light.svg",

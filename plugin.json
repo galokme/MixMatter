@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mixmatter",
-  "version": "2.1.0",
-  "description": "MixMatter is a source-aware AI art-direction and visual-reconstruction system for existing imagery.",
+  "version": "2.1.1",
+  "description": "MixMatter restores the original v1 source-aware editorial print reconstruction behavior while keeping the current OpenAI package identity.",
   "author": {
     "name": "Fan Jiale / Galok",
     "email": "galokview@outlook.com",
@@ -24,7 +24,7 @@
       "interface": {
         "displayName": "MixMatter",
         "shortDescription": "AI art direction for existing imagery",
-        "longDescription": "MixMatter reads a user-supplied image before reconstructing it, identifies what must survive, forms a source-specific art-direction thesis, and rebuilds the image through flattened editorial composition, source-derived cropping and scale shifts, selective photographic retention, visible halftone and duotone, graphic fields, controlled tactile collage, and modernist hierarchy. Clear requests execute directly; vague requests are handled with autonomous judgment unless real ambiguity requires clarification. Revisions preserve successful decisions rather than restarting from a random composition. MixMatter adds no new typography by default, never invents or translates source text, and permits only exact wording explicitly supplied by the user unless generated copy is explicitly authorized.",
+        "longDescription": "MixMatter reconstructs a user-supplied image rather than merely decorating it. Version 2.1.1 restores the original v1 visual baseline: bold disassembly and recomposition, aggressive crop and scale shifts, selective photography, visible halftone or duotone, flattened graphic fields, tactile torn-paper collage, source-adaptive color, and strict source-text protection. Unrelated images must not collapse into one recurring blue/coral/botanical decorative template.",
         "developerName": "Fan Jiale",
         "category": "Creativity",
         "capabilities": [
@@ -35,9 +35,9 @@
         "privacyPolicyURL": "https://www.galok.me/mixmatter/privacy/",
         "termsOfServiceURL": "https://www.galok.me/mixmatter/terms/",
         "defaultPrompt": [
-          "Process this image with MixMatter. Preserve what makes the source identifiable and do not add new text.",
-          "Make this image flatter and more graphic with MixMatter. Preserve the main subject and defining structure.",
-          "Reconstruct this portrait with MixMatter. Keep the identity intact, simplify the background, and add no new typography."
+          "Process this image with MixMatter. Reconstruct the composition rather than applying a filter or decorative frame.",
+          "Make this image bold, flat, printed, and source-specific with MixMatter. Preserve semantic identity, not the original camera layout.",
+          "Rebuild this image with selective photography, halftone, graphic fields, and tactile collage. Do not add new text or reuse a fixed decorative template."
         ],
         "brandColor": "#126BFF",
         "composerIcon": "./assets/mixmatter-icon-light.svg",
