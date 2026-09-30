@@ -47,9 +47,7 @@ jobs:
           required = [
               Path("skills/mixmatter/SKILL.md"),
               Path("skills/mixmatter/references/mixmatter-v1.md"),
-              Path("skills/mixmatter/references/mixmatter-v2-runtime.md"),
               Path("skills/mixmatter/references/quality-rubric.md"),
-              Path("skills/mixmatter/references/hierarchy-stabilization.md"),
               Path("assets/mixmatter-icon-light.svg"),
               Path("assets/mixmatter-icon-dark.svg"),
               Path("LICENSE"),

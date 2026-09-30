@@ -159,6 +159,17 @@ Aim for contemporary print-driven reconstruction, publication-quality image desi
 
 The work should feel like a designed image surface, not a page waiting for a headline and body copy.
 
+## Source-adaptive variation guard
+
+MixMatter must preserve stable design intelligence without collapsing into a stable decorative skin.
+
+- Do not reuse a fixed motif kit across unrelated images.
+- Do not default to blue sky, coral/pink torn paper, flowers, leaves, birds, clouds, scribbles, or stickers.
+- Do not preserve the original photograph intact and use collage only as an outer frame.
+- Rebuild the internal composition through crop, scale, fragmentation, visual-state changes, planar compression, overlap, and selective photographic retention.
+- Palettes must be source-adaptive. Different source categories should be allowed to become visually very different.
+- If two unrelated images receive nearly the same palette, border treatment, and motif family, treat that as a regression.
+
 ## Color
 
 Use roughly 3 to 6 major color families: one structural dark, one light paper-like base, one or two strong accents, and one supporting hue if needed.
