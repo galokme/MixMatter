@@ -1,10 +1,41 @@
 # Changelog
 
+## 2.2.0 — 2026-10-07
+
+### Added
+
+- Claude Code plugin and marketplace manifests (`.claude-plugin/`), so the skill installs with `/plugin marketplace add galokme/MixMatter`
+- host behavior for surfaces that can read images but cannot generate them: the skill returns one concise, source-specific image-editing brief instead of pretending to render or describing a generic style
+- runtime guidance for revisions (keep successful crop, identity, hierarchy, and locks; change only the requested axis), alternatives from the original source, and plain-language direction / structure / intensity controls, all bounded by the v1 visual baseline
+- CI checks for manifest version agreement, changelog coverage, byte-identical mirrors, skill frontmatter, and retired identities
+
+### Changed
+
+- the skill's host section now covers ChatGPT, Codex, Claude, and Claude Code instead of OpenAI hosts only
+- unified the public name as **MixMatter** across documentation, legal pages, icons, and submission materials
+- moved every repository link to `galokme/MixMatter`
+- `prompt/mixmatter-v1.md` and `eval/quality-rubric.md` are now exact mirrors of the packaged copies in `skills/mixmatter/references/`
+- rewrote the README to describe the actual v1 runtime, per-host installation, usage, and the showcase plates; the 2.0 documents are labelled as research, not runtime authority
+- renamed the CI workflow to `mixmatter-ci.yml` and ran it on every pull request
+
+### Unchanged
+
+- v1 visual baseline, source-text policy, scope boundary, and hard constraints
+
+## 2.1.1 — 2026-09-30
+
+### Changed
+
+- restored the v1 visual runtime as the sole runtime authority in `skills/mixmatter/SKILL.md` and the root `SKILL.md`
+- removed the packaged `mixmatter-v2-runtime.md` and `hierarchy-stabilization.md` references from the skill bundle
+- added explicit guards against unrelated sources collapsing into one recurring blue / coral / botanical decorative template, and matching failure items in the quality rubric
+- bumped all manifests to `2.1.1`
+
 ## 2.1.0 — 2026-09-18
 
 ### Changed
 
-- rebranded the public product from **Mixmatter / Mixmatter** to **Mixmatter**
+- rebranded the public product from **Press Print** to **MixMatter**
 - retained the technical repository, package, Skill, and web slugs as `mixmatter` for compatibility
 - replaced the previous offset-sheet badge with a layered material icon built from source, photographic, halftone, tape, and marker elements
 - added coordinated light and dark icon variants with identical geometry and corrected depth ordering
@@ -31,7 +62,7 @@
 
 ### Changed
 
-- upgraded Mixmatter from a reconstruction prompt system into a research-backed AI art-direction and visual-reconstruction system
+- upgraded MixMatter from a reconstruction prompt system into a research-backed AI art-direction and visual-reconstruction system
 - vague requests now default to autonomous source-specific judgment; clarification or alternatives are reserved for genuine ambiguity
 - revisions preserve successful crop, hierarchy, locks, identity, and material decisions instead of behaving like random rerolls
 - alternative directions return to the original source image unless the user explicitly asks to build on a prior result
@@ -39,14 +70,14 @@
 - strengthened the default requirement for visibly reconstructed composition so restraint does not collapse into ordinary photo styling
 - retained the established v1 visual language as rendering authority while adding 2.0 reasoning and preservation intelligence
 - retained strict source-text protection and zero-new-text default
-- public product name standardized as **Mixmatter** while package/repository identifiers may continue to use `mixmatter`
+- public product name standardized as **MixMatter** while package/repository identifiers may continue to use `mixmatter`
 
 ### Architecture
 
 - remains a **Skills-only** Agent Skill / OpenAI Plugin architecture
 - no MCP server is required
 - no custom ChatGPT host UI is required
-- no external Mixmatter image-generation backend is required
+- no external MixMatter image-generation backend is required
 - host-native image understanding and generation/editing capabilities are used when available
 - future web or backend runtimes may implement the same six capability contracts without redefining the core product
 
@@ -63,7 +94,7 @@
 - revision continuity
 - distinction between revision-from-result and alternative-from-source
 - Typography, Restore, and Custom as interpretable direction families where relevant
-- the final Mixmatter product logo
+- the final MixMatter product logo
 
 ## 1.0.2 — 2026-09-10
 
@@ -97,7 +128,7 @@ A compliant v1.0.2 result adds zero new text by default. Source text remains in 
 - added a fallback rule: if exact source text cannot be preserved reliably, crop, obscure, simplify, or retain it as photographic texture rather than hallucinating a replacement
 - strengthened hard failures for pseudo-text, filler editorial copy, translated/rewritten/duplicated source text, enlarged source-text headlines, and approximate hallucinated replacements
 - reduced prompt language that strongly implied typography-led poster or magazine-cover design
-- clarified that Mixmatter hierarchy must come from crop, scale, color, texture, source-derived geometry, overlap, and negative space rather than generated headlines or body copy
+- clarified that MixMatter hierarchy must come from crop, scale, color, texture, source-derived geometry, overlap, and negative space rather than generated headlines or body copy
 - synchronized the universal Skill, OpenAI-packaged Skill, master prompt, packaged reference, and quality rubric around the same text policy
 - updated OpenAI starter prompts to explicitly prohibit new text while allowing source text to survive selectively
 - bumped OpenAI plugin metadata to `1.0.1`
@@ -126,7 +157,7 @@ The v1.0.1 hotfix specifically addressed source photographs containing signage t
 
 ## 1.0.0 — 2026-09-09
 
-Initial Mixmatter image-only release.
+Initial MixMatter image-only release.
 
 ### Added
 

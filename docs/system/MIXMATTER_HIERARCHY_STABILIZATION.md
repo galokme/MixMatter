@@ -1,11 +1,11 @@
-# Mixmatter Hierarchy Stabilization
+# MixMatter Hierarchy Stabilization
 Version: 2.0
 Status: System Extension
 Scope: General handling of diffuse, repetitive, sparse, or ambiguous source hierarchy
 
 ## 0. Purpose
 
-This document closes a gap between Mixmatter's existing visual grammar and runtime behavior.
+This document closes a gap between MixMatter's existing visual grammar and runtime behavior.
 
 The existing research already requires stronger hierarchy than the source, functional low-information fields, source-derived direction, and cause-level critique. The missing step was an explicit rule for what to do when the source itself does not provide a sufficiently useful hierarchy.
 
@@ -17,7 +17,7 @@ Hierarchy stabilization is **not** a new user-facing mode and does not replace t
 
 A source may need hierarchy stabilization when attention is spread too evenly, many similar subjects compete at the same level, the composition is dominated by large low-information fields, or no anchor is strong enough to carry the intended reconstruction.
 
-Do not use rigid percentage, coverage, or object-count thresholds as universal triggers. Evaluate whether the source hierarchy can support a decisive Mixmatter reconstruction.
+Do not use rigid percentage, coverage, or object-count thresholds as universal triggers. Evaluate whether the source hierarchy can support a decisive MixMatter reconstruction.
 
 ## 2. Repetition resolution
 
@@ -106,9 +106,9 @@ A hierarchy-stabilized output should fail critique when:
 
 When revision is needed, change the hierarchy cause first: anchor selection, grouping, crop, scale contrast, suppression, or field role. Do not hide weak hierarchy under more material texture.
 
-## 7. Relationship to Mixmatter identity
+## 7. Relationship to MixMatter identity
 
-Hierarchy stabilization exists to strengthen the existing Mixmatter identity:
+Hierarchy stabilization exists to strengthen the existing MixMatter identity:
 
 - v1 visual force remains the rendering authority,
 - v2 source intelligence decides where that force should land,

@@ -1,10 +1,10 @@
-# Mixmatter OpenAI Plugin Test Plan — 2.1
+# MixMatter OpenAI Plugin Test Plan — 2.2
 
-This plan validates the UI-independent Skills-only Mixmatter 2.1 package.
+This plan validates the UI-independent Skills-only MixMatter 2.2 package.
 
 ## Goal
 
-Verify that Mixmatter can be discovered and invoked with a supplied image, performs source-aware art direction and reconstruction, preserves semantic identity, keeps revision continuity, and follows the 2.1 research-derived decision system without relying on MCP widgets or a custom ChatGPT host UI.
+Verify that MixMatter can be discovered and invoked with a supplied image, performs source-aware art direction and reconstruction, preserves semantic identity, keeps revision continuity, and follows the v1 visual runtime in `skills/mixmatter/SKILL.md` without relying on MCP widgets or a custom ChatGPT host UI.
 
 ## Marketplace setup
 
@@ -15,7 +15,7 @@ The repository exposes a development marketplace at:
 Example local setup:
 
 ```bash
-codex plugin marketplace add Fanjiale-CN/mixmatter --ref main
+codex plugin marketplace add galokme/MixMatter --ref main
 codex plugin marketplace list
 ```
 
@@ -31,7 +31,7 @@ Record:
 - whether semantic identity survived,
 - whether reconstruction was visibly compositional,
 - whether materiality was causally justified,
-- whether the result retained Mixmatter identity.
+- whether the result retained MixMatter identity.
 
 ## Positive tests
 
@@ -39,12 +39,12 @@ Record:
 
 Input:
 
-`@Mixmatter Process this image.`
+`@MixMatter Process this image.`
 
 Attach a source image.
 
 Expected:
-- Mixmatter activates;
+- MixMatter activates;
 - the source is visually read before treatment;
 - the system chooses a source-specific direction autonomously unless real ambiguity exists;
 - no custom menu or widget is required;
@@ -55,7 +55,7 @@ Expected:
 
 Input:
 
-`@Mixmatter 处理这张图片，不要新增文字。`
+`@MixMatter 处理这张图片，不要新增文字。`
 
 Attach a source image.
 
@@ -79,7 +79,7 @@ Expected:
 
 Input:
 
-`@Mixmatter Process this image.`
+`@MixMatter Process this image.`
 
 Do not attach or otherwise provide an image.
 
@@ -113,7 +113,7 @@ Expected:
 
 Input:
 
-`用 Mixmatter 重构这张招牌很多的街景。保留场景身份，不要新增、翻译或双语复制文字。`
+`用 MixMatter 重构这张招牌很多的街景。保留场景身份，不要新增、翻译或双语复制文字。`
 
 Expected:
 - preserve only identity-bearing source text clearly when feasible;
@@ -125,7 +125,7 @@ Expected:
 
 Input:
 
-`Reconstruct this with Mixmatter and add only the exact text “地铁”.`
+`Reconstruct this with MixMatter and add only the exact text “地铁”.`
 
 Expected:
 - may add `地铁`;
@@ -139,7 +139,7 @@ Input:
 
 `Restore this old photograph naturally and faithfully.`
 
-Expected: Mixmatter should not be selected automatically for ordinary faithful restoration.
+Expected: MixMatter should not be selected automatically for ordinary faithful restoration.
 
 ### N2 — Watercolor conversion
 
@@ -147,7 +147,7 @@ Input:
 
 `Turn this image into a watercolor painting.`
 
-Expected: Mixmatter should not be selected automatically.
+Expected: MixMatter should not be selected automatically.
 
 ### N3 — From-scratch typography-heavy layout
 
@@ -155,7 +155,7 @@ Input:
 
 `Design a typography-heavy exhibition poster from scratch with headline, date, and body copy.`
 
-Expected: Mixmatter should not be selected automatically because its core identity is source-image art direction and reconstruction rather than general-purpose typesetting.
+Expected: MixMatter should not be selected automatically because its core identity is source-image art direction and reconstruction rather than general-purpose typesetting.
 
 ## Visual quality checks
 
@@ -182,9 +182,11 @@ Check specifically that:
 
 ## Host-capability distinction
 
-If the Skill activates correctly but the current host surface does not provide image understanding or image generation/editing to the installed Plugin, record that as a host-capability limitation rather than a Mixmatter reconstruction failure.
+If the Skill activates correctly but the current host surface does not provide image understanding or image generation/editing to the installed Plugin, record that as a host-capability limitation rather than a MixMatter reconstruction failure.
 
-If image generation/editing is available but Mixmatter stops at describing a prompt instead of performing the requested supported transformation, record that as a Skill behavior failure.
+If image generation/editing is available but MixMatter stops at describing a prompt instead of performing the requested supported transformation, record that as a Skill behavior failure.
+
+If image generation/editing is not available, the expected behavior is one short line saying so, followed by a single concise, source-specific image-editing brief. A generic style description, a full analysis transcript, or a claim to have produced an image is a Skill behavior failure.
 
 ## Result record
 
@@ -197,7 +199,7 @@ For each case, record:
 - plugin activation: yes/no
 - image tool execution: yes/no/not available
 - semantic preservation score
-- Mixmatter identity score
+- MixMatter identity score
 - reconstruction strength score
 - observed failure taxonomy tags
 - notes

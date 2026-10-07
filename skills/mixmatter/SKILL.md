@@ -39,9 +39,9 @@ A second governing rule applies whenever text is visible in the source:
 
 Existing source text may be selectively retained when it contributes to scene identity. Unless the user explicitly supplies exact new wording, generated typography is outside the MixMatter v1.0.2 system.
 
-## OpenAI host behavior
+## Host behavior
 
-This packaged copy preserves the MixMatter v1.0.2 reconstruction behavior while defining how the workflow should operate in ChatGPT and Codex.
+This packaged copy preserves the MixMatter v1.0.2 reconstruction behavior while defining how the workflow should operate in any host that loads Agent Skills, including ChatGPT, Codex, Claude, and Claude Code.
 
 - Expect a user-supplied source image.
 - If the user asks for MixMatter without supplying an image, ask them to upload or attach one rather than inventing a source.
@@ -54,6 +54,22 @@ This packaged copy preserves the MixMatter v1.0.2 reconstruction behavior while 
 - If the layout needs a graphic mass where typography might normally appear, use source-derived shape, flat field, halftone region, texture, crop, or negative space instead.
 - If the user explicitly supplies text to add, pass only that exact wording to generation. Do not translate, expand, or supplement it.
 - Do not expose private chain-of-thought or hidden source analysis. Perform structural analysis internally and return the final result or a concise user-facing explanation when generation cannot proceed.
+
+### When no image tool is available
+
+Some hosts can read images but cannot generate or edit them. In that case, do not pretend to have produced an image and do not return a generic style description. Instead:
+
+1. Say in one short line that this surface cannot render images, so you are providing a ready-to-use MixMatter brief.
+2. Return one self-contained image-editing prompt, written for the user's image model and specific to this source: the structural anchors to keep, the components and how they are recomposed, which regions become photographic / printed / graphic / collaged, the source-derived palette, the aspect ratio, and the exact source-text handling (including the zero-new-text rule or the user's exact wording).
+3. Build that prompt from `references/mixmatter-v1.md`, adapted to the actual source rather than pasted in full.
+
+Keep the brief concise and actionable. It is a deliverable, not an analysis transcript.
+
+### Revisions and alternatives
+
+- When the user asks to adjust a result ("keep this crop, make the right side quieter"), revise that result: keep the successful crop, identity, hierarchy, explicit locks, and useful material decisions, and change only the requested axis. Do not reroll the whole composition.
+- When the user asks for another direction from the original image, return to the original source, not the previous output. Carry over explicit locks and identity lessons, then form a new source-specific reconstruction.
+- Users may steer with plain language about **direction** (what to amplify or suppress), **structure** (how far the original camera composition may be broken), and **intensity** (how strongly halftone, collage, and flattening appear). Apply these within the v1 visual baseline; they never override the source-text policy or hard constraints.
 
 ### Scope boundary for explicit invocation
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
-<title id="title">Mixmatter icon — Dark</title>
-<desc id="desc">Mixmatter layered material icon with source card, architecture card, halftone card, cyan tape and lavender marker.</desc>
+<title id="title">MixMatter icon — Dark</title>
+<desc id="desc">MixMatter layered material icon with source card, architecture card, halftone card, cyan tape and lavender marker.</desc>
 <defs>
 <linearGradient id="tray" x1="160" y1="90" x2="850" y2="930" gradientUnits="userSpaceOnUse"><stop stop-color="#1C2E49"/><stop offset="1" stop-color="#142238"/></linearGradient>
 <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0D57CE"/><stop offset="1" stop-color="#2387FF"/></linearGradient>

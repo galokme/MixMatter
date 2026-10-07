@@ -1,12 +1,12 @@
-# Mixmatter Support
+# MixMatter Support
 
-Mixmatter is published and maintained by **Fan Jiale**, an individual developer, under the **Galok** brand.
+MixMatter is published and maintained by **Fan Jiale**, an individual developer, under the **Galok** brand.
 
 ## Best support channel
 
 For bugs, trigger problems, installation failures, reproducible visual regressions, or compatibility issues, use GitHub Issues:
 
-https://github.com/Fanjiale-CN/press-print/issues
+https://github.com/galokme/MixMatter/issues
 
 GitHub Issues are public. Do not post credentials, private images, private conversations, government identifiers, financial information, health information, or other sensitive personal data.
 
@@ -20,8 +20,8 @@ For a matter that should not be posted publicly, email:
 
 Where practical, include:
 
-- host product and surface, such as ChatGPT or Codex
-- Mixmatter version
+- host product and surface, such as ChatGPT, Codex, Claude, or Claude Code
+- MixMatter version
 - the trigger phrase used
 - whether a source image was supplied
 - expected behavior
@@ -30,6 +30,6 @@ Where practical, include:
 
 ## Scope of support
 
-Support covers the Mixmatter Skills-only Plugin / Agent Skill, its packaging, public documentation, and reproducible behavior within supported host environments. Account, billing, model availability, or platform outages controlled by a host provider should be handled through that provider's support channels.
+Support covers the MixMatter Skills-only Plugin / Agent Skill, its packaging, public documentation, and reproducible behavior within supported host environments. Account, billing, model availability, or platform outages controlled by a host provider should be handled through that provider's support channels.
 
 Public support URL: https://www.galok.me/mixmatter/support/

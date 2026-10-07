@@ -1,7 +1,7 @@
 {
   "name": "mixmatter-dev",
   "interface": {
-    "displayName": "Mixmatter Development"
+    "displayName": "MixMatter Development"
   },
   "plugins": [
     {

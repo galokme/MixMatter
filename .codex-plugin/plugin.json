@@ -1,7 +1,7 @@
 {
   "name": "mixmatter",
-  "version": "2.1.1",
-  "description": "MixMatter 2.1.1: restored v1 source-aware editorial print reconstruction with bold recomposition, tactile collage, source-adaptive color, and strict source-text control.",
+  "version": "2.2.0",
+  "description": "MixMatter 2.2: v1 source-aware editorial print reconstruction with bold recomposition, tactile collage, source-adaptive color, and strict source-text control.",
   "author": {
     "name": "Fan Jiale / Galok",
     "email": "galokview@outlook.com",
@@ -23,7 +23,7 @@
   "interface": {
     "displayName": "MixMatter",
     "shortDescription": "AI art direction for existing imagery",
-    "longDescription": "MixMatter reconstructs a user-supplied image rather than merely decorating it. Version 2.1.1 restores the original v1 visual baseline: bold disassembly and recomposition, aggressive crop and scale shifts, selective photography, visible halftone or duotone, flattened graphic fields, tactile torn-paper collage, source-adaptive color, and strict source-text protection. Unrelated images must not collapse into one recurring blue/coral/botanical decorative template.",
+    "longDescription": "MixMatter reconstructs a user-supplied image rather than merely decorating it. It is built on the original v1 visual baseline: bold disassembly and recomposition, aggressive crop and scale shifts, selective photography, visible halftone or duotone, flattened graphic fields, tactile torn-paper collage, source-adaptive color, and strict source-text protection. Unrelated images must not collapse into one recurring blue/coral/botanical decorative template.",
     "developerName": "Fan Jiale",
     "category": "Creativity",
     "capabilities": [

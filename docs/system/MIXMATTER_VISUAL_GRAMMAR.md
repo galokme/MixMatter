@@ -1,18 +1,18 @@
-# Mixmatter Visual Grammar
+# MixMatter Visual Grammar
 Version: 1.0  
 Status: Canonical Theory Layer  
 Scope: Unified ontology, reasoning flow, design logic, and anti-rules
 
 ## 0. Purpose
 
-This document turns the research corpus into one coherent grammar for Mixmatter.
+This document turns the research corpus into one coherent grammar for MixMatter.
 
 It defines:
 
 1. the ontology used to read images,
 2. the sequence of reasoning used to direct reconstruction,
 3. the visual primitives and operations available to the system,
-4. the constraints that preserve Mixmatter’s identity.
+4. the constraints that preserve MixMatter’s identity.
 
 This is **not** a surface-style guide.  
 It is the **judgment grammar** behind the system.
@@ -34,7 +34,7 @@ Examples:
 An element that strongly attracts attention through size, contrast, position, isolation, orientation, or salience, whether or not it is semantically central.
 
 Important rule: **semantic anchor and visual anchor are not the same thing.**  
-Part of Mixmatter’s job is to decide whether to align them, separate them, or rebalance them.
+Part of MixMatter’s job is to decide whether to align them, separate them, or rebalance them.
 
 ### 1.3 Structural Relation
 A relation whose intelligibility matters:
@@ -99,7 +99,7 @@ A material intervention is valid only when causally justified by structure or em
 
 ## 2. General reasoning model
 
-Mixmatter operates as a staged interpretive system:
+MixMatter operates as a staged interpretive system:
 
 ```text
 READ
@@ -160,7 +160,7 @@ Transform the image through operations, not filters.
 Allow physically suggestive consequences if and only if they reinforce the direction.
 
 ### 2.7 CRITIQUE
-Judge the output against identity, direction, hierarchy, material coherence, and Mixmatter identity.
+Judge the output against identity, direction, hierarchy, material coherence, and MixMatter identity.
 
 ### 2.8 REVISE
 Revise causes, not symptoms.
@@ -195,7 +195,7 @@ Default actions:
 - introduce directional pressure.
 
 ### 3.3 Balance and compensated imbalance
-Mixmatter favors deliberate asymmetry, but never shapeless drift.
+MixMatter favors deliberate asymmetry, but never shapeless drift.
 
 Rule:
 - imbalance is acceptable if compensated by counterweight, directional force, or semantic intention.
@@ -246,7 +246,7 @@ It is not allowed to casually break:
 - structural relation that makes the image “that image.”
 
 ### 4.2 Preservation hierarchy
-Mixmatter uses a four-level preservation hierarchy:
+MixMatter uses a four-level preservation hierarchy:
 
 1. **Must preserve** — identity collapse if lost
 2. **Should preserve** — significant meaning loss if lost
@@ -304,7 +304,7 @@ Aggressive crop is dangerous when it:
 - leaves too little evidence for intended reading.
 
 ### 5.5 Editorial feeling without typography
-Mixmatter can feel editorial without adding type by using:
+MixMatter can feel editorial without adding type by using:
 - hierarchy,
 - framing,
 - scale contrast,
@@ -414,7 +414,7 @@ Choose edge types intentionally:
 Never add texture:
 - to fake complexity,
 - to hide weak hierarchy,
-- because “Mixmatter usually has paper texture,”
+- because “MixMatter usually has paper texture,”
 - in equal intensity across all regions,
 - if it damages identity-bearing detail.
 
@@ -430,7 +430,7 @@ Avoid:
 
 ## 8. Spatial intelligence from East Asian research
 
-Mixmatter may absorb transferable logic from Song painting and Japanese editorial design, but never as external costumes.
+MixMatter may absorb transferable logic from Song painting and Japanese editorial design, but never as external costumes.
 
 Allowed transferable principles:
 - multiple scales can coexist,
@@ -483,7 +483,7 @@ Judge every output against these questions:
 4. Are the interventions causally justified?
 5. Is the result reconstructed rather than merely decorated?
 6. Is the materiality bounded and coherent?
-7. Is the output recognizably Mixmatter rather than generic AI polish?
+7. Is the output recognizably MixMatter rather than generic AI polish?
 8. Has the system preserved specificity while reducing redundancy?
 9. Does the image read as designed on a surface?
 10. Is the visual tension controlled rather than arbitrary?
@@ -523,4 +523,4 @@ A good internal simplification:
 9. If not, which cause failed?
 ```
 
-This is the living core of the Mixmatter grammar.
+This is the living core of the MixMatter grammar.

@@ -12,7 +12,7 @@
       "name": "mixmatter",
       "source": "./",
       "description": "Source-aware editorial print reconstruction for existing imagery.",
-      "version": "2.1.1",
+      "version": "2.2.0",
       "category": "Creativity"
     }
   ]
