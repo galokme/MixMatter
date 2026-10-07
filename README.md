@@ -32,6 +32,24 @@ Repository: `Fanjiale-CN/press-print`
 Skill: `mixmatter`  
 Entry point: `SKILL.md`
 
+### Claude Code
+
+```text
+/plugin marketplace add galokme/MixMatter
+/plugin install mixmatter@mixmatter
+```
+
+Or copy the skill folder directly:
+
+```bash
+git clone https://github.com/galokme/MixMatter.git
+mkdir -p ~/.claude/skills && cp -r MixMatter/skills/mixmatter ~/.claude/skills/
+```
+
+### Claude.ai / Claude desktop app
+
+Zip the `skills/mixmatter/` folder (so `mixmatter/SKILL.md` is at the top of the archive) and upload it under **Settings → Capabilities → Skills**.
+
 > **Identity:** the OpenAI package and Skill slug are `mixmatter`. The current GitHub repository URL remains `Fanjiale-CN/press-print` until the repository slug itself is renamed.
 
 ## How Mixmatter 2.1 works
