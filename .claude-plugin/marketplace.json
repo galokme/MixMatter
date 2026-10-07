@@ -1,0 +1,19 @@
+{
+  "name": "mixmatter",
+  "owner": {
+    "name": "Fan Jiale / Galok",
+    "email": "galokview@outlook.com"
+  },
+  "metadata": {
+    "description": "MixMatter skill for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "mixmatter",
+      "source": "./",
+      "description": "Source-aware editorial print reconstruction for existing imagery.",
+      "version": "2.1.1",
+      "category": "Creativity"
+    }
+  ]
+}

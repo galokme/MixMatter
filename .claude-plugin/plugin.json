@@ -1,0 +1,22 @@
+{
+  "name": "mixmatter",
+  "version": "2.1.1",
+  "description": "MixMatter: source-aware editorial print reconstruction for existing imagery — selective photography, visible halftone/duotone, flattened graphic fields, tactile torn-paper collage, and strict source-text protection.",
+  "author": {
+    "name": "Fan Jiale / Galok",
+    "email": "galokview@outlook.com",
+    "url": "https://www.galok.me"
+  },
+  "homepage": "https://www.galok.me/mixmatter/",
+  "repository": "https://github.com/galokme/MixMatter",
+  "license": "MIT",
+  "keywords": [
+    "image-generation",
+    "art-direction",
+    "editorial-design",
+    "visual-reconstruction",
+    "halftone",
+    "duotone",
+    "collage"
+  ]
+}
