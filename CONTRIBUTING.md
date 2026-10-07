@@ -1,6 +1,6 @@
-# Contributing to Mixmatter
+# Contributing to MixMatter
 
-Thanks for testing Mixmatter.
+Thanks for testing MixMatter.
 
 The project is especially interested in evidence about where the reconstruction system succeeds, where it fails, and how different image models interpret the same source.
 
@@ -38,26 +38,27 @@ Pay particular attention to these recurring failure modes:
 
 ## v1.0 scope
 
-Mixmatter v1.0.2 is source-text controlled: it adds zero new text by default and permits only exact wording explicitly supplied by the user.
+MixMatter v1.0.2 is source-text controlled: it adds zero new text by default and permits only exact wording explicitly supplied by the user.
 
 Please keep typography, inferred place names, captions, slogans, dates, and metadata outside the core v1.0 proposal unless the discussion is explicitly about a future typography extension.
 
 ## Core baseline and platform packaging
 
-Mixmatter v1.0.0 is the frozen image-only core baseline. Changes must preserve the v1.0.2 rules against translation, bilingual duplication, approximate source-text reconstruction, and unrequested copy.
+MixMatter v1.0.0 is the frozen image-only core baseline. Changes must preserve the v1.0.2 rules against translation, bilingual duplication, approximate source-text reconstruction, and unrequested copy.
 
-The canonical behavioral sources are the root [`SKILL.md`](SKILL.md) and [`prompt/mixmatter-v1.md`](prompt/mixmatter-v1.md). The evaluation contract lives in [`eval/quality-rubric.md`](eval/quality-rubric.md).
+The canonical behavioral source is [`skills/mixmatter/`](skills/mixmatter/): `SKILL.md` plus `references/mixmatter-v1.md` (master prompt) and `references/quality-rubric.md` (evaluation contract). [`prompt/mixmatter-v1.md`](prompt/mixmatter-v1.md) and [`eval/quality-rubric.md`](eval/quality-rubric.md) are byte-identical mirrors; edit the packaged copy first, then copy it over. CI fails if they drift.
 
 Platform-specific packaging may add manifests, metadata, assets, or synchronized copies of the Skill, but it should not silently change the v1.0 behavior.
 
-When adapting Mixmatter to another platform:
+When adapting MixMatter to another platform:
 
-1. keep the root `SKILL.md` as the universal Agent Skills entry point
-2. keep platform-specific Skill copies synchronized with the canonical core
-3. treat packaging changes separately from behavioral changes
-4. require a version bump and changelog entry for any change that alters reconstruction behavior, trigger boundaries, or hard constraints
+1. keep the root `SKILL.md` as a thin entry point that defers to `skills/mixmatter/`
+2. point every platform manifest at `skills/mixmatter/` rather than adding another copy of the Skill
+3. keep the version identical across `plugin.json`, `.codex-plugin/plugin.json`, `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, the package workflow, and `CHANGELOG.md`
+4. treat packaging changes separately from behavioral changes
+5. require a version bump and changelog entry for any change that alters reconstruction behavior, trigger boundaries, or hard constraints
 
-This keeps OpenAI, Codex, Vercel Skills, and future integrations aligned around the same core system.
+This keeps OpenAI, Codex, Claude, Vercel Skills, and future integrations aligned around the same core system.
 
 ## Example submissions
 

@@ -1,11 +1,11 @@
-# Mixmatter Tool & Capability Specification
+# MixMatter Tool & Capability Specification
 Version: 2.0  
 Status: Canonical Engineering Layer  
 Scope: Capability contracts for the current Skill runtime and future web runtime
 
 ## 0. Architecture rule
 
-Mixmatter 2.0 has six canonical **capabilities**:
+MixMatter 2.0 has six canonical **capabilities**:
 
 1. `analyze_visual`
 2. `propose_direction`
@@ -16,7 +16,7 @@ Mixmatter 2.0 has six canonical **capabilities**:
 
 These names describe the product's reasoning and execution contract. They do **not** require six externally exposed tools.
 
-The current runtime deliberately keeps image understanding, art-direction reasoning, reconstruction, critique, and revision inside the host model + Mixmatter Skill when that is the strongest available environment.
+The current runtime deliberately keeps image understanding, art-direction reasoning, reconstruction, critique, and revision inside the host model + MixMatter Skill when that is the strongest available environment.
 
 ```text
 analyze_visual
@@ -97,17 +97,17 @@ These are emphasis profiles, not style presets.
 ## 3. `reconstruct` capability
 
 ### Purpose
-Execute a direction hypothesis and preservation contract to create a Mixmatter image.
+Execute a direction hypothesis and preservation contract to create a MixMatter image.
 
 ### Current runtime
-The host's native image generation/editing capability, driven by the Mixmatter rendering authority in `mixmatter-v1.md` plus the 2.0 preservation and direction context.
+The host's native image generation/editing capability, driven by the MixMatter rendering authority in `mixmatter-v1.md` plus the 2.0 preservation and direction context.
 
 ### Required behaviors
 - honor hard locks,
 - solve structure before surface materiality,
 - preserve identity-bearing relations,
 - transform through reconstruction rather than a uniform filter,
-- retain Mixmatter's established visual DNA,
+- retain MixMatter's established visual DNA,
 - show visible compositional intervention in the default case.
 
 ### User-level controls
@@ -142,14 +142,14 @@ These may be expressed in ordinary language:
 ## 4. `critique` capability
 
 ### Purpose
-Evaluate whether the generated result achieved the intended direction while preserving source identity and Mixmatter identity.
+Evaluate whether the generated result achieved the intended direction while preserving source identity and MixMatter identity.
 
 ### Current runtime
 Model-native self-critique governed by `MIXMATTER_REGRESSION_BENCHMARK.md` and the existing quality rubric.
 
 ### Core dimensions
 - semantic preservation,
-- Mixmatter identity,
+- MixMatter identity,
 - reconstruction strength,
 - editorial hierarchy,
 - planar coherence,
@@ -265,7 +265,7 @@ User: “Try another direction from the original.”
 - unconstrained generative fill,
 - full freeform design canvas.
 
-These may become supporting capabilities in a future studio, but they must not redefine Mixmatter.
+These may become supporting capabilities in a future studio, but they must not redefine MixMatter.
 
 ---
 
@@ -286,7 +286,7 @@ These may become supporting capabilities in a future studio, but they must not r
 
 ## 10. Final implementation rule
 
-If a proposed tool or parameter does not make Mixmatter better at:
+If a proposed tool or parameter does not make MixMatter better at:
 - reading a source image,
 - making an art-direction decision,
 - reconstructing with identity and structure,

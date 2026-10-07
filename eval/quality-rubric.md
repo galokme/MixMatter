@@ -1,6 +1,6 @@
-# Mixmatter v1.0.2 Quality Rubric
+# MixMatter v1.0.2 Quality Rubric
 
-Use this rubric to evaluate generated Mixmatter results consistently across models and source categories.
+Use this rubric to evaluate generated MixMatter results consistently across models and source categories.
 
 ## Scoring
 
@@ -53,11 +53,11 @@ Do graphic interventions grow from the source rather than from generic poster ha
 
 ## Interpretation
 
-- **90–100**: exemplary Mixmatter
+- **90–100**: exemplary MixMatter
 - **80–89**: strong and publishable
 - **70–79**: directionally correct but needs refinement
 - **60–69**: style cues present, system not fully understood
-- **Below 60**: failed Mixmatter transformation
+- **Below 60**: failed MixMatter transformation
 
 ## Source text evaluation
 
@@ -100,13 +100,18 @@ Any of the following should trigger rejection or regeneration even if the numeri
 - collage reduced to clean corporate rectangles with no tactile paper-layer logic
 - all major regions receive the same visual treatment
 - source-defining geometry is destroyed without a compelling compositional reason
+- unrelated source categories collapse into the same decorative template, palette, framing device, or motif family
+- the source photograph remains substantially intact while torn-paper edges or ornamental cutouts are added mainly around the perimeter
+- flowers, leaves, birds, clouds, doodles, stickers, or similar motifs recur without source-specific justification
+- recurring cobalt/sky-blue, coral/pink, cream-paper, or botanical-green treatment appears without source-specific justification
+- over-preservation makes the result materially less reconstructed than the v1 baseline
 
 ## Model-comparison protocol
 
 When comparing multiple image models:
 
 1. Use the same source image.
-2. Use the same Mixmatter prompt version.
+2. Use the same MixMatter prompt version.
 3. Keep aspect ratio and generation intent constant.
 4. Score each output independently before comparing them side by side.
 5. For sources containing text, record whether the model retained, obscured, hallucinated, translated, duplicated, or promoted source text.

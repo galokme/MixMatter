@@ -2,6 +2,14 @@
 
 ## Release notes
 
+### MixMatter 2.2.0 — Cross-host packaging and consistency
+
+MixMatter 2.2 keeps the restored v1 visual baseline and source-text policy unchanged. It adds a Claude Code plugin manifest, makes the Skill's host guidance platform-neutral, defines a concise source-specific brief for hosts that cannot render images, folds revision continuity and alternative-from-source behavior into the packaged Skill, and unifies naming, versions, and repository links across every manifest and document.
+
+### MixMatter 2.1.1 — v1 visual runtime restored
+
+Version 2.1.1 restored the v1 visual runtime as the sole runtime authority and removed the 2.0 runtime reference from the packaged Skill, with explicit guards against unrelated sources collapsing into one recurring decorative template.
+
 ### MixMatter 2.1.0 — Unified MixMatter identity and portable OpenAI package
 
 MixMatter 2.1 unifies the product name, Skill slug, public website URLs, active icons, review materials, and plugin manifests under the MixMatter identity. It adds the preferred portable root `plugin.json` while retaining `.codex-plugin/plugin.json` as an OpenAI/Codex compatibility manifest. The core source-aware reconstruction behavior and Skills-only architecture remain unchanged.

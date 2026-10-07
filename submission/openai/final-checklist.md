@@ -1,20 +1,20 @@
-# Final Submission Readiness Checklist — MixMatter 2.1
+# Final Submission Readiness Checklist — MixMatter 2.2
 
-This checklist covers the UI-independent Skills-only MixMatter 2.1 package.
+This checklist covers the UI-independent Skills-only MixMatter 2.2 package.
 
 ## Repository readiness
 
 - [x] New plugin public name is `MixMatter`; technical package name is `mixmatter`.
-- [x] Package version is `2.1.0`.
+- [x] Package version is `2.2.0` in every manifest (enforced by CI).
 - [x] Portable manifest is present at root `plugin.json`; technical `name` is `mixmatter`, and `extensions.com.openai.interface.displayName` is `MixMatter`. The submission ZIP omits `.codex-plugin/plugin.json` because the OpenAI portal normalizes and adds it during conversion.
 - [x] Packaged Skill is present at `skills/mixmatter/`.
-- [x] Packaged references include `mixmatter-v1.md`, `mixmatter-v2-runtime.md`, and `quality-rubric.md`.
-- [x] The seven canonical research/system outputs are retained.
+- [x] Packaged references are `mixmatter-v1.md` and `quality-rubric.md`.
+- [x] The seven research/system documents are retained under `docs/` as reference, not runtime authority.
 - [x] ChatGPT host UI source code has been removed from the active product architecture.
 - [x] Host-UI specification documents have been removed from the active product architecture.
 - [x] The Skill no longer depends on creation/result cards, widgets, or MCP UI tools.
 - [x] Direction / Structure / Intensity remain available as natural-language product semantics.
-- [x] Revision continuity remains part of the 2.1 behavior.
+- [x] Revision continuity and alternative-from-source are part of the packaged Skill.
 - [x] Source-text protection remains strict.
 - [x] Light and dark MixMatter icon assets are present.
 - [x] Privacy and Terms describe a Skills-only architecture with no separate MixMatter MCP service.
@@ -44,7 +44,6 @@ skills/
     ├── SKILL.md
     └── references/
         ├── mixmatter-v1.md
-        ├── mixmatter-v2-runtime.md
         └── quality-rubric.md
 
 assets/
@@ -56,16 +55,16 @@ Do not include the retired `apps/mixmatter-chatgpt/` implementation as an active
 
 ## Review materials
 
-- [x] 2.1 listing copy prepared.
-- [x] Three 2.1 starter prompts prepared.
+- [x] 2.2 listing copy prepared.
+- [x] Three starter prompts prepared.
 - [x] Positive and negative review-test framework prepared.
-- [x] 2.1 release notes prepared.
+- [x] 2.2 release notes prepared.
 - [x] Public website, support, privacy, and terms URLs are listed.
 - [x] Developer / publisher relationship remains `Fan Jiale` / `Galok`.
 
 ## Portal actions
 
-- [x] Build the final Plugin ZIP from the reviewed repository state using the `Build MixMatter OpenAI Package` workflow.
+- [ ] Rebuild the final Plugin ZIP for 2.2.0 from the reviewed repository state using the `Build MixMatter OpenAI Package` workflow.
 - [ ] Upload that exact ZIP to the OpenAI submission flow.
 - [ ] Confirm the portal creates a new plugin from root `plugin.json` with technical name `mixmatter`, converts it to normalized Codex format, and preserves `MixMatter` as the display name.
 - [ ] Copy the finalized listing details and starter prompts.
@@ -75,14 +74,14 @@ Do not include the retired `apps/mixmatter-chatgpt/` implementation as an active
 
 ## Go / no-go status
 
-**Status: MIXMATTER 2.1 NEW-PLUGIN PACKAGE READY; REBUILD + PORTAL UPLOAD PENDING.**
+**Status: MIXMATTER 2.2.0 REPOSITORY READY; ZIP REBUILD + PORTAL UPLOAD PENDING.**
 
 
-## Latest validated build
+## Previous validated build (2.1.0, superseded)
 
 - Artifact: `mixmatter-openai-2.1.0.zip`
 - GitHub Actions run: `35335988945`
 - Source commit: `921d8f971df980a427d76c58e9d4b1e1febdd076`
 - SHA-256: `81e74a48eabe4d0ac4235e05c6e276a242e0493d22d720eaf052f489a848863a`
 - Package contents: root `plugin.json`, `skills/mixmatter/`, active MixMatter icon assets, and `LICENSE`
-- Stale-brand scan: no `Press Print`, `Press-Print`, or `galok.me/press-print` references in the ZIP
+- Stale-brand scan: no retired product names or retired website paths in the ZIP

@@ -1,18 +1,18 @@
-# Mixmatter Regression Benchmark
+# MixMatter Regression Benchmark
 Version: 1.0  
 Status: Canonical Evaluation Layer  
 Scope: Release gating, canonical test set, scoring, and review protocol
 
 ## 0. Purpose
 
-This benchmark protects Mixmatter against two major failure modes:
+This benchmark protects MixMatter against two major failure modes:
 
 1. **quality drift** — outputs become weaker, less coherent, or less usable;
-2. **identity drift** — outputs may become prettier or more advanced, but no longer feel like Mixmatter.
+2. **identity drift** — outputs may become prettier or more advanced, but no longer feel like MixMatter.
 
 The benchmark exists to answer:
 - Did the system improve?
-- Did it remain Mixmatter?
+- Did it remain MixMatter?
 - What exactly got better or worse?
 
 ---
@@ -74,7 +74,7 @@ Each gold-set image should be run in the following standard conditions.
 
 ### Condition A — Default vague request
 Prompt:
-- “Process this with Mixmatter.”
+- “Process this with MixMatter.”
 
 Purpose:
 - test autonomous art-direction judgment.
@@ -116,8 +116,8 @@ Questions:
 - Did critical relations survive?
 - Did the image cease to be “that image”?
 
-### 4.2 Mixmatter Identity Score
-Does the result still feel recognizably Mixmatter?
+### 4.2 MixMatter Identity Score
+Does the result still feel recognizably MixMatter?
 
 Indicators:
 - reconstructed, not filtered,
@@ -176,7 +176,7 @@ Penalty metric. Higher means worse.
 Symptoms:
 - movie-poster lighting,
 - dramatic 3D realism,
-- lensy depth cues inconsistent with Mixmatter.
+- lensy depth cues inconsistent with MixMatter.
 
 ---
 
@@ -194,7 +194,7 @@ Reasonable candidates:
 - similarity between preserved target regions,
 - detection of face integrity where relevant,
 - detection of output smoothness / texture dispersion,
-- style-consistency classifiers trained on approved Mixmatter exemplars,
+- style-consistency classifiers trained on approved MixMatter exemplars,
 - comparison against prior accepted benchmark outputs,
 - optional salience/grouping analysis for hierarchy stress cases,
 - optional low-information-field comparison to detect arbitrary filler or role collapse.
@@ -203,7 +203,7 @@ Reasonable candidates:
 At minimum, one internal reviewer should answer:
 - Does it remain the same image?
 - Is it actually reconstructed?
-- Does it still feel like Mixmatter?
+- Does it still feel like MixMatter?
 
 Better:
 - 2–3 reviewers with a calibration set.
@@ -235,7 +235,7 @@ Hierarchy changes must not improve repeated-object scenes by damaging group iden
 
 ### 6.2 Identity gate
 Across the benchmark suite:
-- Mixmatter Identity Score must not decline below accepted threshold,
+- MixMatter Identity Score must not decline below accepted threshold,
 - no more than 10% of reviewed outputs may be flagged “could belong to another tool,”
 - zero release-blocking cultural-costume outputs,
 - zero release-blocking “decorative only” outputs.
@@ -346,7 +346,7 @@ Track:
 For a release candidate to ship:
 
 - Mean Semantic Preservation ≥ 7.5
-- Mean Mixmatter Identity ≥ 8.0
+- Mean MixMatter Identity ≥ 8.0
 - Mean Reconstruction Strength ≥ 7.5
 - Mean Editorial Hierarchy ≥ 7.5
 - Mean Source Specificity ≥ 7.0
@@ -363,6 +363,6 @@ If experience shows they are wrong, recalibrate them with evidence—not vibes.
 
 The benchmark is not meant to reward maximal spectacle.
 
-It is meant to ensure that Mixmatter keeps doing something specific and difficult:
+It is meant to ensure that MixMatter keeps doing something specific and difficult:
 
-> **turning existing images into reconstructed, designed compositions without losing the image’s essential identity or Mixmatter’s own.**
+> **turning existing images into reconstructed, designed compositions without losing the image’s essential identity or MixMatter’s own.**

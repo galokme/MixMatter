@@ -1,8 +1,8 @@
-# Mixmatter 2.0 Runtime
+# MixMatter 2.0 Runtime
 
 ## Goal
 
-Mixmatter 2.0 upgrades the existing source-aware reconstruction skill into a stronger AI art-direction workflow **without replacing its original visual identity**.
+MixMatter 2.0 upgrades the existing source-aware reconstruction skill into a stronger AI art-direction workflow **without replacing its original visual identity**.
 
 The product promise remains simple:
 
@@ -14,7 +14,7 @@ Complexity stays behind the interaction.
 
 ### 1. Vague request
 
-Example: `@Mixmatter process this.`
+Example: `@MixMatter process this.`
 
 The model silently reads the source, identifies semantic and visual anchors, determines preservation constraints, stabilizes hierarchy when the source is diffuse / repetitive / sparse / ambiguous, forms the strongest source-specific direction, and executes.
 
@@ -24,7 +24,7 @@ If the image has multiple equally plausible readings whose choice would material
 
 Example: `Make it flatter and more fragmented. Keep the face unchanged. No typography.`
 
-Execute directly using the existing Mixmatter image language and the explicit locks.
+Execute directly using the existing MixMatter image language and the explicit locks.
 
 ### 3. Revision request
 
@@ -96,7 +96,7 @@ Good: `Preserve the cyclist and billboard relation, suppress edge clutter, flatt
 
 ## Natural-language control model
 
-Direction, Structure, and Intensity remain useful abstractions inside Mixmatter 2.0.
+Direction, Structure, and Intensity remain useful abstractions inside MixMatter 2.0.
 
 - **Direction** identifies the dominant reconstruction thesis.
 - **Structure** describes how much original compositional continuity may be spent.
@@ -114,7 +114,7 @@ Owns:
 - semantic preservation judgment,
 - hierarchy stabilization,
 - direction formation,
-- Mixmatter prompt and reconstruction behavior,
+- MixMatter prompt and reconstruction behavior,
 - image generation or editing when the host supports it,
 - critique and revision reasoning.
 
@@ -133,7 +133,7 @@ They should be added only when they provide real computation rather than pretend
 
 ## Product boundary
 
-Mixmatter 2.0 is not becoming a general design suite. Generic background removal, upscaling, resize, broad text-to-image generation, and a Photoshop-like canvas are not its core identity.
+MixMatter 2.0 is not becoming a general design suite. Generic background removal, upscaling, resize, broad text-to-image generation, and a Photoshop-like canvas are not its core identity.
 
 The core remains:
 

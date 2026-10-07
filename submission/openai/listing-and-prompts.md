@@ -1,4 +1,4 @@
-# Listing Copy and Starter Prompts — MixMatter 2.1
+# Listing Copy and Starter Prompts — MixMatter 2.2
 
 ## Info
 
@@ -12,11 +12,9 @@
 
 ### Long description
 
-MixMatter 2.1 turns a user-supplied image into a source-aware contemporary print reconstruction by combining art-direction judgment with the established MixMatter visual language.
+MixMatter turns a user-supplied image into a source-aware contemporary print reconstruction.
 
-It reads the source before transforming it: identifying semantic anchors, visual hierarchy, structural relations, identity invariants, low-information fields, clutter, and transformation opportunities. It then decides what must be preserved, what may be transformed or removed, and forms one dominant source-specific direction thesis.
-
-The reconstruction prioritizes structural operations such as crop, isolation, suppression, scale contrast, planar compression, controlled fragmentation, and overlap before material effects. Halftone, duotone, torn or cut edges, paper layering, registration shifts, and photocopy-like behavior are used selectively when they reinforce hierarchy, separation, rupture, compression, or artifact-ness.
+It reads the source before transforming it: identifying the one to three structures that make the scene recognizable, then disassembling the photograph into meaningful components and rebuilding them into a new hierarchy through crop, scale shift, overlap, displacement, and compressed depth. Different regions take different states — retained photography, visible halftone or duotone, flat graphic fields, and tactile torn-paper collage — so the result reads as a designed, printed surface rather than a filtered photo.
 
 > **Photography is source material, not sacred material.**
 >
@@ -24,11 +22,9 @@ The reconstruction prioritizes structural operations such as crop, isolation, su
 >
 > **Preserve semantic identity, not visual completeness.**
 
-Clear requests execute directly. For vague requests, MixMatter inspects the source and chooses the strongest source-specific direction by default. It asks for clarification or offers alternatives only when multiple plausible readings would materially change the result.
+Color is derived from each source rather than from a fixed palette, so unrelated images produce materially different results instead of one recurring template. Clear requests execute directly; vague requests get source-specific judgment. Revisions keep successful crop, identity, and hierarchy, and alternatives start again from the original image.
 
-Revisions preserve successful crop, hierarchy, explicit locks, identity-bearing details, and useful material decisions rather than restarting from a random composition. If the user asks for a new alternative from the original source, MixMatter returns to that original source unless instructed otherwise.
-
-MixMatter 2.1 adds zero new text by default. Existing source text remains in its original language and may be preserved selectively when it matters to identity. It is not translated or duplicated into a bilingual layout by default. If exact source text cannot be reproduced reliably, it should be obscured, cropped, simplified, or treated as source texture rather than replaced with hallucinated wording. New wording is used only when the user supplies it exactly or explicitly authorizes generated copy.
+MixMatter adds zero new text by default. Existing source text remains in its original language and may be preserved selectively when it matters to identity. It is never translated or duplicated into a bilingual layout by default. If exact source text cannot be reproduced reliably, it is obscured, cropped, simplified, or treated as texture rather than replaced with hallucinated wording. New wording is used only when the user supplies it exactly.
 
 MixMatter is designed for existing imagery. It is not a generic style marketplace, broad photo editor, cinematic realism engine, or from-scratch design suite.
 
@@ -36,8 +32,8 @@ Typical sources include:
 
 - cities, streets, architecture, transport, and infrastructure
 - landscapes, interiors, and public spaces
-- portraits, people, and animals
-- food, objects, retail environments, and cultural artifacts
+- portraits, people, and performance
+- objects, retail environments, and cultural artifacts
 
 MixMatter does not operate a separate image-generation backend or require an MCP service. Image understanding and generation/editing are performed by the host platform when available.
 
@@ -53,7 +49,7 @@ MixMatter does not operate a separate image-generation backend or require an MCP
 
 ### Version
 
-`2.1.0`
+`2.2.0`
 
 ### Public URLs
 

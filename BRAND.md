@@ -1,17 +1,17 @@
-# Mixmatter brand and publisher specification
+# MixMatter brand and publisher specification
 
 ## Public identity
 
-- **Product / plugin name:** Mixmatter
+- **Product / plugin name:** MixMatter
 - **Technical package / Skill slug:** `mixmatter`
 - **Publisher brand:** Galok
 - **Publisher:** Fan Jiale, an individual developer publishing under the Galok brand
 - **OpenAI listing developer name:** Galok
 - **OpenAI developer identity:** Fan Jiale when submitting as a verified individual
-- **Repository:** https://github.com/Fanjiale-CN/press-print
+- **Repository:** https://github.com/galokme/MixMatter
 - **Website:** https://www.galok.me/mixmatter/
 
-Mixmatter is a Galok project with one public identity across the website, OpenAI package, Skill slug, documentation, and active brand assets.
+MixMatter is a Galok project with one public identity across the website, OpenAI package, Skill slug, documentation, and active brand assets.
 
 ## Positioning
 
@@ -25,7 +25,7 @@ Mixmatter is a Galok project with one public identity across the website, OpenAI
 
 **Long listing description**
 
-> Mixmatter reads a source image, identifies what must survive, forms a source-specific art-direction thesis, and reconstructs the image through crop, flattened planes, selective photography, halftone and duotone, graphic reduction, controlled collage, and tactile material logic. It preserves semantic identity while allowing visual structure to be spent deliberately.
+> MixMatter reads a source image, identifies what must survive, forms a source-specific art-direction thesis, and reconstructs the image through crop, flattened planes, selective photography, halftone and duotone, graphic reduction, controlled collage, and tactile material logic. It preserves semantic identity while allowing visual structure to be spent deliberately.
 
 **OpenAI category**
 
@@ -33,7 +33,7 @@ Mixmatter is a Galok project with one public identity across the website, OpenAI
 
 ## Identity idea
 
-The Mixmatter icon is a compact material stack rather than a lettermark. It represents a source image being read as separate visual substances and recomposed into one object.
+The MixMatter icon is a compact material stack rather than a lettermark. It represents a source image being read as separate visual substances and recomposed into one object.
 
 Its fixed geometry contains:
 
@@ -50,7 +50,7 @@ The depth order is structural: the halftone card remains in front of the archite
 
 ### Core accents
 
-- Mixmatter Blue: `#126BFF`
+- MixMatter Blue: `#126BFF`
 - Cyan Tape: `#A9E5F6`
 - Lavender Marker: `#9B8BF5`
 - Concrete: `#D7DCE3`
@@ -85,4 +85,4 @@ The depth order is structural: the halftone card remains in front of the archite
 - `assets/mixmatter-icon-light.svg`
 - `assets/mixmatter-icon-dark.svg`
 
-The Galok and Mixmatter names and marks remain branding identifiers. The MIT License does not grant trademark rights or a general right to imply endorsement by the publisher.
+The Galok and MixMatter names and marks remain branding identifiers. The MIT License does not grant trademark rights or a general right to imply endorsement by the publisher.
